@@ -7,10 +7,100 @@
              x:Class="MyProjectMobileApp.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <StackLayout>
+            <Label HorizontalOptions="Center" FontSize="Header" TextColor="Black" >
+                Connect 4
+            </Label>
+        </StackLayout>
+
+        <Grid BackgroundColor="Blue">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Button x:Name="firstButton" Clicked="first_Clicked" Grid.Column="0" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="secondButton" Clicked="second_Clicked" Grid.Column="1" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="thirdButton" Clicked="third_Clicked" Grid.Column="2" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="fourthButton" Clicked="fourth_Clicked" Grid.Column="3" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="fifthButton" Clicked="fifth_Clicked" Grid.Column="4" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="sixthButton" Clicked="sixth_Clicked" Grid.Column="5" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="seventhButton" Clicked="seventh_Clicked" Grid.Column="6" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+
+            <Button x:Name="eigthButton" Clicked="eigth_Clicked" Grid.Row="1" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="ninthButton" Clicked="ninth_Clicked" Grid.Row="2" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="tenthButton" Clicked="tenth_Clicked" Grid.Row="3" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="elevenButton" Clicked="eleven_Clicked" Grid.Row="4" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="twelveButton" Clicked="twelve_Clicked" Grid.Row="5" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+
+            <Button x:Name="thirteenButton" Clicked="thirteen_Clicked" Grid.Row="1" Grid.Column="1" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button >
+            <Button x:Name="fourteenButton" Clicked="fourteen_Clicked" Grid.Row="1" Grid.Column="2" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="fifteenButton" Clicked="fifteen_Clicked" Grid.Row="1" Grid.Column="3" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="sixteenButton" Clicked="sixteen_Clicked" Grid.Row="1" Grid.Column="4" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="seventeenButton" Clicked="seventeen_Clicked" Grid.Row="1" Grid.Column="5" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="eighteenButton" Clicked="eighteen_Clicked" Grid.Row="1" Grid.Column="6" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+
+            <Button x:Name="nineteenButton" Clicked="nineteen_Clicked" Grid.Row="2" Grid.Column="1" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="twentyButton" Clicked="twenty_Clicked" Grid.Row="2" Grid.Column="2" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="twentyoneButton" Clicked="twentyone_Clicked" Grid.Row="2" Grid.Column="3" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="twentytwoButton" Clicked="twentytwo_Clicked" Grid.Row="2" Grid.Column="4" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="twentythreeButton" Clicked="twentythree_Clicked" Grid.Row="2" Grid.Column="5" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="twentyfourButton" Clicked="twentyfour_Clicked" Grid.Row="2" Grid.Column="6" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+
+            <Button x:Name="twentyfiveButton" Clicked="twentyfive_Clicked" Grid.Row="3" Grid.Column="1" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="twentysixButton" Clicked="twentysix_Clicked" Grid.Row="3" Grid.Column="2" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="twentysevenButton" Clicked="twentyseven_Clicked" Grid.Row="3" Grid.Column="3" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="twentyeightButton" Clicked="twentyeight_Clicked" Grid.Row="3" Grid.Column="4" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="twentynineButton" Clicked="twentynine_Clicked" Grid.Row="3" Grid.Column="5" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="thirtyButton" Clicked="thirty_Clicked" Grid.Row="3" Grid.Column="6" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+
+            <Button x:Name="thirtyoneButton" Clicked="thirtyone_Clicked" Grid.Row="4" Grid.Column="1" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="thirtytwoButton" Clicked="thirtytwo_Clicked" Grid.Row="4" Grid.Column="2" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="thirtyfourButton" Clicked="thirtyfour_Clicked" Grid.Row="4" Grid.Column="3" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="thirtyfiveButton" Clicked="thirtyfive_Clicked" Grid.Row="4" Grid.Column="4" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="thirtysixButton" Clicked="thirtysix_Clicked" Grid.Row="4" Grid.Column="5" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="thirtysevenButton" Clicked="thirtyseven_Clicked" Grid.Row="4" Grid.Column="6" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+
+            <Button x:Name="thirtyeightButton" Clicked="thirtyeight_Clicked" Grid.Row="5" Grid.Column="1" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="fortyButton" Clicked="forty_Clicked" Grid.Row="5" Grid.Column="2" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="fortyoneButton" Clicked="fortyone_Clicked" Grid.Row="5" Grid.Column="3" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="fortytwoButton" Clicked="fortytwo_Clicked" Grid.Row="5" Grid.Column="4" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+            <Button x:Name="fortythreeButton" Clicked="fortythree_Clicked" Grid.Row="5" Grid.Column="5" HeightRequest="100" WidthRequest="80" HorizontalOptions="Center"  CornerRadius="50"></Button>
+            <Button x:Name="fortyfourButton" Clicked="fortyfour_Clicked" Grid.Row="5" Grid.Column="6" HeightRequest="100"  WidthRequest="80" HorizontalOptions="Center" CornerRadius="50"></Button>
+
+        </Grid>
+
+
+
+        <StackLayout>
+            <Button x:Name="rules" Clicked="rules_Clicked" HorizontalOptions="Center" WidthRequest="60" HeightRequest="50" Text="RULES">
+            </Button>
+        </StackLayout>
+
+        <StackLayout>
+            <Button x:Name="reset" Clicked="reset_Clicked" HorizontalOptions="Center" WidthRequest="60" HeightRequest="50" Text="RESET">
+            </Button>
+        </StackLayout>
+
+        <Entry Placeholder="Player 1" WidthRequest="80" HorizontalOptions="Center" PlaceholderColor="Black" />
+        <Entry Placeholder="Player 2" WidthRequest="80" HorizontalOptions="Center" PlaceholderColor="Black" />
+
+
     </StackLayout>
 
 </ContentPage>
